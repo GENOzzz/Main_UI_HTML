@@ -1,0 +1,14 @@
+body{
+    margin:0;
+    padding:0;
+}
+#parent{
+    width: 200px; 
+    height: 200px; 
+    background-color: powderblue; 
+    left: 50%; top: 50%; 
+    transform: translate(-50%, -50%); 
+    position: absolute;
+
+
+}

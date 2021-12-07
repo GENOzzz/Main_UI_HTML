@@ -1,0 +1,6 @@
+div[name="photo2-name"]{
+    background-color: yellow;
+}
+div[name="photo-name"]{
+    background-color: green;
+}

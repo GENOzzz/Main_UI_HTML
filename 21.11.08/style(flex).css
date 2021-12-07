@@ -1,0 +1,54 @@
+body{padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.container{
+    height: auto;
+    width: 80%;
+    background: skyblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;/*해당 블럭(한줄을 다차지하는)을 인라인블럭(사용자가 정한크기만큼 차지)으로 만들어 가로 가상공간 제거*/
+    height: 400px;
+    width: 30%;
+    background-color: slateblue;
+}
+.a{
+    color : white;
+}
+
+@media screen and (max-width : 1200px) {
+    .container{
+        width: 80%;
+    }
+    .item{
+        width: 30%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .container{
+        width: 80%;
+    }
+    .item{
+        width: 45%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+}
+@media screen and (max-width : 450px) {
+    .container{
+        width: 80%;
+    }
+    .item{
+        width: 100%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+}

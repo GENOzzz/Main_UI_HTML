@@ -1,0 +1,30 @@
+body{
+    top:0;
+    left:0;
+}
+#all{
+    margin: auto;
+}
+#title,#picture{
+    text-align: center;
+
+}
+#picture{
+    width: 1100px;
+    margin :0 auto;
+}
+.photo{
+    color : white;
+    background-color: cadetblue;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 4px;
+    float: left;
+    cursor: pointer;
+}
+img{
+    width: 300px;
+    height: 400px;
+    border-radius: 4px;
+}

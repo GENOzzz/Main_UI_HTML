@@ -1,0 +1,12 @@
+.container {
+    background-color: yellow;
+	display: flex;
+    /* flex-wrap: nowrap; */
+	/* flex-wrap: wrap; */
+	flex-wrap: wrap-reverse;
+}
+.item{
+    background-color: green;
+    margin: 5px;
+    padding : 5px;
+}

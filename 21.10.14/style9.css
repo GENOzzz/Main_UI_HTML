@@ -1,0 +1,17 @@
+#up,#down{
+    width: 200px;
+    height: 200px;
+}
+#up{
+    background-color: brown;
+    position: absolute;
+    z-index: 20;
+}
+#down{
+    background-color:wheat;
+    left:100px;
+    top:100px;
+    position: absolute;
+    z-index: 10;
+    /* z-index = layer 층을 말함. */
+}

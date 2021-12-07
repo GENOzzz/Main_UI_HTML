@@ -1,0 +1,30 @@
+.parent{
+    display: flex;
+    background: greenyellow;
+    margin-top: 50px;
+    height: 300px;
+    /* flex-wrap: wrap; */
+
+    /* position: relative; */
+    /* justify-content: center; */
+    align-items: center;  
+}
+.child{
+    background: goldenrod;
+    /* flex-basis: 320px;  자식요소의 사이즈 만큼만 줄어들고 자식요소의 사이즈가 해당값보다 작다면 커짐(한글은 적용x) */
+    /* flex: 1 1 40%;  flex-grow: 1; flex-shrink: 1; flex-basis: 0% <<<를 줄여 사용가능 */
+    margin : 5px;
+    /* flex-grow: 1;       flex-basis를 제외한 컨테이너의 여백을 채움 */
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */  
+}
+.child:nth-child(1) { align-self: stretch; }      /*flex-basis의 값을 제외한 나머지 컨테이너의 여백을 지정한 비율씩 나눠가짐 */
+/* .child:nth-child(2){} */
+.child:nth-child(2):hover {z-index: 1; transform: scale(3); border: 3px solid lightgray;}
+.child:nth-child(3) { align-self: flex-start; }
+.child:nth-child(3):hover {z-index: 1; transform: scale(4); border: 3px solid lightgray;}
+.child:nth-child(4) { align-self: flex-end; }
+.child:nth-child(4):hover {z-index: 1; transform: scale(2); border: 3px solid lightgray;}
+.child:nth-child(5) { align-self: stretch; border: 3px solid slateblue;}

@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin:0;
+}
+.photo-box{
+    width: 500px;
+    height: 500px;
+    background-color: darkseagreen;
+}
+
+@media screen and (max-width : 1000px){
+    .photo-box{
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+    }
+}
+@media screen and (max-width : 700px){
+    .photo-box{
+        width: 200px;
+        height: 200px;
+        background-color:yellow;
+    }
+}
+@media screen and (max-width : 500px){
+    .photo-box{
+        width: 100px;
+        height: 100px;
+        background-color:red;
+    }
+}
+@media screen and (max-width : 300px){
+    .photo-box{
+        width: 50px;
+        height: 50px;
+        background-color:purple;
+    }
+}

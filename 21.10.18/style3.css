@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    padding:0;
+}
+#box1{
+    background-color: bisque;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+}
+#box2{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    text-align: center;
+}
+@media screen and (max-width : 600px) {
+    #box1{
+        height: 420px;
+        width: 100%;
+    }
+    #box2{
+        width: 80%;
+    }
+    #box2:nth-child(2){
+        margin-top : 20px;
+    }
+}
