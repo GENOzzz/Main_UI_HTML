@@ -30,9 +30,12 @@ const header=document.querySelector('.header')
 const main_body=document.querySelector('.main_body')
 const footer=document.querySelector('.footer')
 const p=document.querySelector('p')
+const openBtn = document.querySelector('.burger');
+const sidebar = document.querySelector('.sidebar');
+const menus= document.querySelectorAll('.menu');
 //주간모드 야간모드
 function openmodal(){
-    if(button.style.float=='right'){
+    if(button.style.float=='right'){//주간으로 바꿀때
         button.style.float='left'
         button.style.background='brown'
         body.style.background='white'
@@ -55,7 +58,10 @@ function openmodal(){
         for(let cut of cuts){
             cut.style.boxShadow=`${0} ${5}px ${10}px ${4}px darksalmon`
         }
-    }else{
+        for(let menu of menus){
+            menu.style.background='peru'
+        }
+    }else{//야간으로 바꿀때
         button.style.float='right'
         button.style.background='black'
         body.style.background='black'
@@ -77,6 +83,9 @@ function openmodal(){
         }
         for(let cut of cuts){
             cut.style.boxShadow=`${0} ${5}px ${10}px ${4}px dimgray`
+        }
+        for(let menu of menus){
+            menu.style.background='grey'
         }
     }
     mmain.classList.remove('hide')
@@ -100,3 +109,24 @@ function getTime(){
 }
 
 setInterval(getTime,1000)//1초마다 getTime을 호출
+
+function openSidebar(){
+    sidebar.classList.add('show')
+}
+
+function closeAll(){
+    sidebar.classList.remove('show')
+    for(let i=0;i<menus.length;i++){
+        menus[i].classList.remove('hide')
+        menus[i].classList.remove('show')
+    }
+}
+
+function closeSidebar(){
+    console.log("mouseleave")
+    setTimeout(closeAll,1000)
+}
+
+openBtn.addEventListener('click', openSidebar)
+sidebar.addEventListener('mouseleave',closeSidebar)
+
